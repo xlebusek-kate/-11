@@ -9,7 +9,9 @@ public class Main {
             System.out.println(year + " год — невисокосный год.");
         } else if (year % 4 == 0) {
             System.out.println(year + " год — високосный год.");
-        } else System.out.println(year + " год — невисокосный год.");
+        } else {
+            System.out.println(year + " год — невисокосный год.");
+        }
     }
 
     // Задание номер 2
@@ -22,13 +24,13 @@ public class Main {
             System.out.println("Установите обычную версию приложения для Android по ссылке");
         } else if (number == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }else {
+        } else {
             System.out.println("Ошибка");
         }
     }
 
     // Задание номер 3
-    public static void checkDistance(int deliveryDistance ){
+    public static void checkDistance(int deliveryDistance) {
         if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             System.out.println("Потребуется дней: 3");
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
